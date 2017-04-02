@@ -1,26 +1,209 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="frg-66-Bub">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Log In View Controller-->
+        <scene sceneID="Df3-5O-N9h">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="frg-66-Bub" customClass="LogInViewController" customModule="Laundry" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="e1i-kX-ZcM"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ekb-Zl-WPC"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="ySr-ar-hgp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pnY-Tq-MPE" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="0.0" y="616" width="375" height="51"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="Z5O-Qp-eo9"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smart Laundry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HbS-Zk-Yge">
+                                <rect key="frame" x="61" y="54" width="253" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="AwK-n5-Hf5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pnY-Tq-MPE" secondAttribute="trailing" id="CYq-YK-hpz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HbS-Zk-Yge" secondAttribute="trailing" constant="45" id="GDh-SG-hua"/>
+                            <constraint firstItem="HbS-Zk-Yge" firstAttribute="top" secondItem="e1i-kX-ZcM" secondAttribute="bottom" constant="34" id="KS0-15-2wL"/>
+                            <constraint firstItem="pnY-Tq-MPE" firstAttribute="leading" secondItem="ySr-ar-hgp" secondAttribute="leading" id="ntB-8x-v3u"/>
+                            <constraint firstItem="Ekb-Zl-WPC" firstAttribute="top" secondItem="pnY-Tq-MPE" secondAttribute="bottom" id="qFU-ex-K18"/>
+                            <constraint firstItem="HbS-Zk-Yge" firstAttribute="leading" secondItem="ySr-ar-hgp" secondAttribute="leadingMargin" constant="45" id="sn4-Ir-8RA"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="facebookLoginButton" destination="pnY-Tq-MPE" id="bH5-D1-aXB"/>
+                        <segue destination="kn3-9i-e37" kind="show" identifier="LoginToHelp" animates="NO" id="qNf-Eo-Ovu"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WIc-Oo-kUo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-671.20000000000005" y="-1032.2338830584708"/>
+        </scene>
+        <!--Help View Controller-->
+        <scene sceneID="cbi-54-d5H">
+            <objects>
+                <viewController id="kn3-9i-e37" customClass="HelpViewController" customModule="Laundry" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uZP-2H-wON"/>
+                        <viewControllerLayoutGuide type="bottom" id="PaS-Zu-uap"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iFR-kB-BHF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Securely place your device on top of your washer or dryer, making sure that it won't fall off once your machine starts " textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neB-zl-l2B">
+                                <rect key="frame" x="16" y="28" width="343" height="172"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="172" id="Euk-JG-rvG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFk-wH-0fb">
+                                <rect key="frame" x="107" y="358" width="161" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="usd-1i-Wk6"/>
+                                    <constraint firstAttribute="width" constant="161" id="zhf-UZ-VBP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="30"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButton:" destination="kn3-9i-e37" eventType="touchUpInside" id="qLg-cg-AkJ"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="yPB-xf-Eme">
+                                <rect key="frame" x="125" y="610" width="125" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="g9k-Ej-pvN"/>
+                                    <constraint firstAttribute="width" constant="125" id="vV6-4U-UDs"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="pageChange:" destination="kn3-9i-e37" eventType="valueChanged" id="pxl-Sq-R7a"/>
+                                </connections>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="neB-zl-l2B" firstAttribute="top" secondItem="uZP-2H-wON" secondAttribute="bottom" constant="8" id="0Eb-LO-RkC"/>
+                            <constraint firstItem="DFk-wH-0fb" firstAttribute="centerX" secondItem="iFR-kB-BHF" secondAttribute="centerX" id="88w-m8-KkJ"/>
+                            <constraint firstItem="PaS-Zu-uap" firstAttribute="top" secondItem="yPB-xf-Eme" secondAttribute="bottom" constant="20" id="VAN-up-REu"/>
+                            <constraint firstItem="yPB-xf-Eme" firstAttribute="centerX" secondItem="iFR-kB-BHF" secondAttribute="centerX" id="YVT-kC-Uog"/>
+                            <constraint firstItem="neB-zl-l2B" firstAttribute="leading" secondItem="iFR-kB-BHF" secondAttribute="leadingMargin" id="haR-Xs-fDy"/>
+                            <constraint firstItem="neB-zl-l2B" firstAttribute="trailing" secondItem="iFR-kB-BHF" secondAttribute="trailingMargin" id="iun-CK-PEU"/>
+                            <constraint firstItem="PaS-Zu-uap" firstAttribute="top" secondItem="DFk-wH-0fb" secondAttribute="bottom" constant="233" id="zRx-vN-GrL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="infoLabel" destination="neB-zl-l2B" id="uuQ-4R-Djw"/>
+                        <outlet property="nextButton" destination="DFk-wH-0fb" id="op5-yl-pI0"/>
+                        <segue destination="5JI-Hw-voA" kind="show" identifier="HelpToMonitor" animates="NO" id="SRI-Au-FHp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HYP-lL-Eq2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="789.60000000000002" y="-1032.2338830584708"/>
+        </scene>
+        <!--Monitor View Controller-->
+        <scene sceneID="igo-nE-k1b">
+            <objects>
+                <viewController id="5JI-Hw-voA" customClass="MonitorViewController" customModule="Laundry" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oCf-QB-neF"/>
+                        <viewControllerLayoutGuide type="bottom" id="fW2-eP-CNX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8nM-NT-Y0k">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monitoring" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUq-om-vBz">
+                                <rect key="frame" x="16" y="20" width="343" height="122"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="122" id="k8z-aQ-8vT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2n-66-Byl">
+                                <rect key="frame" x="161" y="629" width="83" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="RRs-a8-PIv"/>
+                                    <constraint firstAttribute="height" constant="30" id="vO1-NF-27k"/>
+                                </constraints>
+                                <state key="normal" title="Log out">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logOut:" destination="5JI-Hw-voA" eventType="touchUpInside" id="D14-0d-xrU"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cae-76-h5e" customClass="LoadingCircle" customModule="Laundry" customModuleProvider="target">
+                                <rect key="frame" x="80" y="179" width="214" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oC4-3z-VKs">
+                                <rect key="frame" x="16" y="524" width="343" height="85"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="56p-Ym-q4V"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="85" id="AAU-aX-eu8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="25"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="start:" destination="5JI-Hw-voA" eventType="touchUpInside" id="bHQ-UI-uNX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="fW2-eP-CNX" firstAttribute="top" secondItem="C2n-66-Byl" secondAttribute="bottom" constant="8" id="D0Q-Nj-sAV"/>
+                            <constraint firstItem="C2n-66-Byl" firstAttribute="centerX" secondItem="8nM-NT-Y0k" secondAttribute="centerX" constant="15" id="DIZ-uX-BOQ"/>
+                            <constraint firstItem="wUq-om-vBz" firstAttribute="top" secondItem="oCf-QB-neF" secondAttribute="bottom" id="Ebi-0q-8Qi"/>
+                            <constraint firstItem="oC4-3z-VKs" firstAttribute="leading" secondItem="8nM-NT-Y0k" secondAttribute="leadingMargin" id="K1e-yk-PS1"/>
+                            <constraint firstItem="C2n-66-Byl" firstAttribute="top" secondItem="oC4-3z-VKs" secondAttribute="bottom" constant="20" id="PPN-iI-zcu"/>
+                            <constraint firstItem="oC4-3z-VKs" firstAttribute="leading" secondItem="8nM-NT-Y0k" secondAttribute="leadingMargin" id="XOL-UZ-bLa"/>
+                            <constraint firstItem="oC4-3z-VKs" firstAttribute="trailing" secondItem="8nM-NT-Y0k" secondAttribute="trailingMargin" id="bUV-2d-ZVx"/>
+                            <constraint firstAttribute="trailing" secondItem="wUq-om-vBz" secondAttribute="trailing" constant="16" id="duF-ba-sL5"/>
+                            <constraint firstItem="C2n-66-Byl" firstAttribute="top" secondItem="oC4-3z-VKs" secondAttribute="bottom" constant="20" id="mMT-Kc-rrl"/>
+                            <constraint firstItem="wUq-om-vBz" firstAttribute="leading" secondItem="8nM-NT-Y0k" secondAttribute="leading" constant="16" id="pMb-wk-zIt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="oC4-3z-VKs" id="Fpr-Nu-3sz"/>
+                        <outlet property="circle" destination="cae-76-h5e" id="7pr-K5-4d2"/>
+                        <outlet property="monitoringLabel" destination="wUq-om-vBz" id="Ffw-bY-GZN"/>
+                        <segue destination="frg-66-Bub" kind="show" identifier="monitorToLogin" id="6X5-cx-09C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g7r-gS-g5K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2496.8000000000002" y="-1032.2338830584708"/>
         </scene>
     </scenes>
 </document>

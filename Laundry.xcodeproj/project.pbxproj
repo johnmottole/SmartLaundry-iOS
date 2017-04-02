@@ -7,21 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5224C8341E5A803800C9B0C8 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5224C8331E5A803800C9B0C8 /* HelpViewController.swift */; };
+		5224C83A1E5A9CE700C9B0C8 /* MonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5224C8391E5A9CE700C9B0C8 /* MonitorViewController.swift */; };
 		52363A0F1E5130270022516D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52363A0E1E5130260022516D /* AppDelegate.swift */; };
-		52363A111E5130270022516D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52363A101E5130270022516D /* ViewController.swift */; };
 		52363A141E5130270022516D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52363A121E5130270022516D /* Main.storyboard */; };
 		52363A161E5130270022516D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52363A151E5130270022516D /* Assets.xcassets */; };
 		52363A191E5130270022516D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52363A171E5130270022516D /* LaunchScreen.storyboard */; };
+		52363A261E5164060022516D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52363A251E5164060022516D /* GoogleService-Info.plist */; };
+		52363A2C1E516F9C0022516D /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52363A2B1E516F9C0022516D /* LogInViewController.swift */; };
+		52F18D371E76582F00E07A1E /* LoadingCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F18D361E76582F00E07A1E /* LoadingCircle.swift */; };
+		774D6E43B56D4D23EB97D9AF /* Pods_Laundry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E366EEA1CBB8A2DF1E9902D /* Pods_Laundry.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		52363A241E5132800022516D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		36CD76B2E5238E3C2FEE9494 /* Pods-Laundry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Laundry.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Laundry/Pods-Laundry.debug.xcconfig"; sourceTree = "<group>"; };
+		5224C8331E5A803800C9B0C8 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		5224C8391E5A9CE700C9B0C8 /* MonitorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonitorViewController.swift; sourceTree = "<group>"; };
 		52363A0B1E5130260022516D /* Laundry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Laundry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52363A0E1E5130260022516D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		52363A101E5130270022516D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		52363A131E5130270022516D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52363A151E5130270022516D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52363A181E5130270022516D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52363A1A1E5130270022516D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52363A251E5164060022516D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		52363A2B1E516F9C0022516D /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		52F18D361E76582F00E07A1E /* LoadingCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingCircle.swift; sourceTree = "<group>"; };
+		9DD9D2113DDBA06D3E6FA3EE /* Pods-Laundry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Laundry.release.xcconfig"; path = "Pods/Target Support Files/Pods-Laundry/Pods-Laundry.release.xcconfig"; sourceTree = "<group>"; };
+		9E366EEA1CBB8A2DF1E9902D /* Pods_Laundry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Laundry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +54,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				774D6E43B56D4D23EB97D9AF /* Pods_Laundry.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CB97069689B069B16E7C34B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E366EEA1CBB8A2DF1E9902D /* Pods_Laundry.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		453B4C566C9C0B6AA69F75CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				36CD76B2E5238E3C2FEE9494 /* Pods-Laundry.debug.xcconfig */,
+				9DD9D2113DDBA06D3E6FA3EE /* Pods-Laundry.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		52363A021E5130250022516D = {
 			isa = PBXGroup;
 			children = (
 				52363A0D1E5130260022516D /* Laundry */,
 				52363A0C1E5130260022516D /* Products */,
+				453B4C566C9C0B6AA69F75CD /* Pods */,
+				3CB97069689B069B16E7C34B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,11 +100,15 @@
 			isa = PBXGroup;
 			children = (
 				52363A0E1E5130260022516D /* AppDelegate.swift */,
-				52363A101E5130270022516D /* ViewController.swift */,
+				52363A2B1E516F9C0022516D /* LogInViewController.swift */,
+				5224C8391E5A9CE700C9B0C8 /* MonitorViewController.swift */,
+				52F18D361E76582F00E07A1E /* LoadingCircle.swift */,
+				5224C8331E5A803800C9B0C8 /* HelpViewController.swift */,
 				52363A121E5130270022516D /* Main.storyboard */,
 				52363A151E5130270022516D /* Assets.xcassets */,
 				52363A171E5130270022516D /* LaunchScreen.storyboard */,
 				52363A1A1E5130270022516D /* Info.plist */,
+				52363A251E5164060022516D /* GoogleService-Info.plist */,
 			);
 			path = Laundry;
 			sourceTree = "<group>";
@@ -71,9 +120,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52363A1D1E5130270022516D /* Build configuration list for PBXNativeTarget "Laundry" */;
 			buildPhases = (
+				F871E48349D7B88332380DCD /* [CP] Check Pods Manifest.lock */,
 				52363A071E5130250022516D /* Sources */,
 				52363A081E5130250022516D /* Frameworks */,
 				52363A091E5130250022516D /* Resources */,
+				52363A241E5132800022516D /* Embed Frameworks */,
+				338C0E9617186F9217D5F2C1 /* [CP] Embed Pods Frameworks */,
+				08071AEC74C97068524EA9B0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,19 +179,71 @@
 			files = (
 				52363A191E5130270022516D /* LaunchScreen.storyboard in Resources */,
 				52363A161E5130270022516D /* Assets.xcassets in Resources */,
+				52363A261E5164060022516D /* GoogleService-Info.plist in Resources */,
 				52363A141E5130270022516D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		08071AEC74C97068524EA9B0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Laundry/Pods-Laundry-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		338C0E9617186F9217D5F2C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Laundry/Pods-Laundry-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F871E48349D7B88332380DCD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		52363A071E5130250022516D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52363A111E5130270022516D /* ViewController.swift in Sources */,
 				52363A0F1E5130270022516D /* AppDelegate.swift in Sources */,
+				5224C83A1E5A9CE700C9B0C8 /* MonitorViewController.swift in Sources */,
+				52363A2C1E516F9C0022516D /* LogInViewController.swift in Sources */,
+				52F18D371E76582F00E07A1E /* LoadingCircle.swift in Sources */,
+				5224C8341E5A803800C9B0C8 /* HelpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,27 +362,39 @@
 		};
 		52363A1E1E5130270022516D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36CD76B2E5238E3C2FEE9494 /* Pods-Laundry.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U57BQ7LWFP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Laundry",
+				);
 				INFOPLIST_FILE = Laundry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JohnMottole.Laundry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				SWIFT_WHOLE_MODULE_OPTIMIZATION = YES;
 			};
 			name = Debug;
 		};
 		52363A1F1E5130270022516D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DD9D2113DDBA06D3E6FA3EE /* Pods-Laundry.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U57BQ7LWFP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Laundry",
+				);
 				INFOPLIST_FILE = Laundry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JohnMottole.Laundry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				SWIFT_WHOLE_MODULE_OPTIMIZATION = YES;
 			};
 			name = Release;
 		};
@@ -300,6 +417,7 @@
 				52363A1F1E5130270022516D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
